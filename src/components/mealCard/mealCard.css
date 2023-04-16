@@ -1,0 +1,45 @@
+.meal {
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 300px;
+}
+
+.meal:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.meal .meal-list {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meal .image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.meal:hover .image {
+  transform: scale(1.2);
+}
+
+.meal h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.Link {
+  color: black;
+  text-decoration: none;
+}
